@@ -1,0 +1,71 @@
+\fbox{例題 1.1}
+
+データ
+
+\begin{tabular}{c|c|c} \hline
+  No. & $x$ & $x^2$ \\ \hline
+  1 & 2.4 & 5.76 \\
+  2 & 3.5 & 12.25 \\
+  3 & 1.2 & 1.44 \\
+  4 & 1.8 & 3.24 \\
+  5 & 2.6 & 6.76 \\ \hline
+  計 & 11.5 & 29.45 \\ \hline
+\end{tabular}
+
+\vskip\baselineskip
+
+\noindent 1) 平均
+\begin{equation*}
+  \bar{x}
+  = \frac{1}{5} \sum_{i=1}^{8} x_{i}
+  = \frac{2.4 + 3.5 + \cdots + 2.6}{5}
+  = \frac{11.5}{5}
+  = 2.30
+\end{equation*}
+
+\vskip\baselineskip
+\noindent 2) メディアン
+
+データを大きさの順に並べると
+\begin{equation*}
+  1.2, 1.8, 2.4, 2.6, 3.5
+\end{equation*}
+となり、$n$は奇数だから
+\begin{equation*}
+  Me = 2.4
+\end{equation*}
+
+\vskip\baselineskip
+\noindent 3) 平方和
+\begin{align*}
+  S = &\sum_{i=1}^{5} {x_{i}}^2 - \frac{\left( \sum_{i=1}^{5} x_{i} \right)^{2}}{5} \\
+  = &\frac{2.4^{2} + 3.5^{2} + \cdots + 2.6^{2}}{5} - \frac{11.5^{2}}{5} \\
+  = &29.45 - 26.45 = 3.000
+\end{align*}
+
+\vskip\baselineskip
+\noindent 4) 分散
+\begin{equation*}
+  V
+  = \frac{S}{n - 1}
+  = \frac{3.000}{4}
+  = 0.7500
+\end{equation*}
+
+\vskip\baselineskip
+\noindent 5) 標準偏差
+\begin{equation*}
+  s
+  = \sqrt{V}
+  = \sqrt{0.7500}
+  = 0.866
+\end{equation*}
+
+\vskip\baselineskip
+\noindent 6) 範囲
+\begin{equation*}
+  R
+  = x_{text{max}} - x_{\text{min}}
+  = 3.5 - 1.2
+  = 2.3
+\end{equation*}

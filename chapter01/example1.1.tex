@@ -1,0 +1,74 @@
+\fbox{例題 1.1}
+
+データ
+
+\begin{tabular}{c|c|c} \hline
+  No. & $x$ & $x^2$ \\ \hline
+  1 & 16.8 & 282.24 \\
+  2 & 14.7 & 216.09 \\
+  3 & 18.3 & 334.89 \\
+  4 & 15.2 & 231.04 \\
+  5 & 16.4 & 268.96 \\
+  6 & 17.1 & 292.41 \\
+  7 & 15.8 & 249.64 \\
+  8 & 16.0 & 256.00 \\ \hline
+  計 & 130.3 & 2131.27 \\ \hline
+\end{tabular}
+
+\vskip\baselineskip
+
+\noindent 1) 平均
+\begin{equation*}
+  \bar{x}
+  = \frac{1}{8} \sum_{i=1}^{8} x_{i}
+  = \frac{16.8 + 14.7 + \cdots + 16.0}{8}
+  = \frac{130.3}{8}
+  = 16.29
+\end{equation*}
+
+\vskip\baselineskip
+\noindent 2) メディアン
+
+データを大きさの順に並べると
+\begin{equation*}
+  14.3, 15.2, 15.8, 16.0, 16.4, 16.8, 17.1, 18.3
+\end{equation*}
+となり、$n$は偶数だから中央の2つの値、すなわち16.0と16.4の平均を求めて
+\begin{equation*}
+  Me = \frac{16.0 + 16.4}{2} = 16.2
+\end{equation*}
+
+\vskip\baselineskip
+\noindent 3) 平方和
+\begin{align*}
+  S = &\sum_{i=1}^{8} {x_{i}}^2 - \frac{\left( \sum_{i=1}^{8} x_{i} \right)^{2}}{8} \\
+  = &\frac{16.8^{2} + 14.7^{2} + \cdots + 16.0^{2}}{8} - \frac{130.8^{2}}{8} \\
+  = &2131.27 - 2122.26 = 9.01
+\end{align*}
+
+\vskip\baselineskip
+\noindent 4) 分散
+\begin{equation*}
+  V
+  = \frac{S}{n - 1}
+  = \frac{9.01}{7}
+  = 1.287
+\end{equation*}
+
+\vskip\baselineskip
+\noindent 5) 標準偏差
+\begin{equation*}
+  s
+  = \sqrt{V}
+  = \sqrt{1.287}
+  = 1.13
+\end{equation*}
+
+\vskip\baselineskip
+\noindent 6) 範囲
+\begin{equation*}
+  R
+  = x_{text{max}} - x_{\text{min}}
+  = 18.3 - 14.7
+  = 3.6
+\end{equation*}
